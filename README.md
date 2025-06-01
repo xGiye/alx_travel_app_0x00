@@ -50,27 +50,7 @@ cd listings-app
 ### Run the custom management command to populate the database with 20 fake listings:
 ```python manage.py seed```
 
-## Models Overview
-## Listing 
-### `title: CharField`
-### `description: TextField`
-### `location: CharField`
-### `price_per_night: DecimalField`
-### `available: BooleanField`
-### `created_at: DateTimeField`
 
-## Booking
-### `listing:` ForeignKey → Listing
-### `user:` ForeignKey → User
-### `check_in:` DateField
-### `check_out:` DateField
-### `created_at:` DateTimeField
-
-## Review
-### `listing:` ForeignKey → Listing
-### `user:` ForeignKey → User
-### `rating:` PositiveSmallIntegerField
-### `comment:` TextField
 ### `created_at:` DateTimeField
 
 ## Serializers
